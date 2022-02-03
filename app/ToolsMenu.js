@@ -162,10 +162,12 @@ define([
             calculateCombinedExpression: function (settings) {
                 var h = this.state.highlight.expression;
                 var u = this.state.filter.usageFeatures;
+                var t = this.state.filter.tenancyFeatures;
+                var s = this.state.filter.statusFeatures;
                 var f = this.state.filter.floorFeatures;
                 var a = this.state.filter.areaFeatures;
 
-                var expressions = [h, u, f, a];
+                var expressions = [h, u, t, s, f, a];
                 var combinedExpression = expressions.filter(item => item != undefined).join(" AND ");
 
                 return combinedExpression;
