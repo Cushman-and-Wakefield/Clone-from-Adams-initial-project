@@ -137,7 +137,8 @@ define([
                     portalItem: {
                         id: this.settings.webscene
                     },
-                    basemap: "topo-vector"
+                    //basemap: "topo-vector"
+                    basemap: "topo"
                 });
 
                 // create a view
